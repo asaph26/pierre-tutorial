@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-title>Create a new Todo</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <input matInput placeholder="Task todo" #todo>
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="save(todo.value)">SAVE</button>
+    </mat-card-actions>
+</mat-card>
